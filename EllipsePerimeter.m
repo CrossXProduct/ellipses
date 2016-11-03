@@ -8,3 +8,5 @@ h = (a - 1)^2 / (a + 1)^2;
 perimeter = pi*(a + 1)*(1 + (3*h)/(10 + sqrt(4 - 3*h)));
 
 % Alternatively, use numerical quadrature?
+%perimeter = quad(@(t)ArcLengthIntegrand(t,a) , 0 , 2*pi );
+
