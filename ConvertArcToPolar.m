@@ -12,7 +12,7 @@ count = 0;     % emergency stop counter
 err = 1;
 
 % Use Newton's method to update.
-while err > tol
+while abs(err) > tol
    calc_arc = quad(@(t)ArcLengthIntegrand(t,a) , 0 , theta );  % Use a numerical
    %  method to estimate the arc length. There may be a better quadrature
    %  function to use. 
